@@ -35,7 +35,7 @@
         if ([oldVersion isEqualToString:newVersion]) {
             //从主页启动
             UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-            KGHomePageViewController *homeVC = [storyBoard instantiateViewControllerWithIdentifier:@"HomePage"];
+            UINavigationController *homeVC = [storyBoard instantiateViewControllerWithIdentifier:@"HomePage"];
             self.window.rootViewController = homeVC;
         }else{
             //从欢迎页启动

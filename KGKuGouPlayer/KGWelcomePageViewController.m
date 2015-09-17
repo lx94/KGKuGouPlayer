@@ -72,7 +72,7 @@
 - (void)startKGplayer:(UIButton *)sender{
     //直接将主页设置为window的rootViewController 这样就不会再回到欢迎页了
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    KGHomePageViewController *homeVC = [storyBoard instantiateViewControllerWithIdentifier:@"HomePage"];
+    UINavigationController *homeVC = [storyBoard instantiateViewControllerWithIdentifier:@"HomePage"];
     [UIApplication sharedApplication].keyWindow.rootViewController = homeVC;
     
 }
